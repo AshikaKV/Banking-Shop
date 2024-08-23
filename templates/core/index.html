@@ -1,0 +1,21 @@
+{% extends 'core/base.html' %} {% load static %} {% block head_title %}Banking System{% endblock %} {% block content %}
+<div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
+
+    <div class="w-full lg:w-1/2 lg:py-6 text-center">
+        
+    </div>
+    <div class="flex flex-col w-full lg:w-1/2 justify-center items-start pt-12 pb-24 px-6 bg-white rounded-2xl bg-opacity-70">
+        <h1 class="font-bold text-4xl my-4">Simple Banking System</h1>
+        <p class="leading-normal mb-4">
+            This application is entitled Simple Banking Management System. This is a simple web-based application developed in Python and Django Framework. The main goal of this project is to provide bank account holders can
+            make some transactions. The application allows the account holders of a certain bank to withdraw and deposit.
+            It has a pleasant user interface and this application consists of user-friendly features and functionalities.
+
+        </p>
+        <div class="flex justify-end w-full">
+            <a href="{% url 'accounts:user_registration' %}" class="bg-blue-900 text-white rounded-none hover:bg-white hover:text-blue-900 hover:border-blue-900 shadow hover:shadow-lg py-2 px-4 border border-gray-900 hover:border-transparent">Register</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
